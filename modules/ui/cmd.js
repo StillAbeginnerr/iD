@@ -17,11 +17,11 @@ export var uiCmd = function (code) {
     var mac = (detected.os === 'mac');
     var result = '',
         replacements = {
-            '⌘': mac ?  t('shortcuts.key.cmd')    : t('shortcuts.key.ctrl'),
-            '⇧': mac ? t('shortcuts.key.shift')  : t('shortcuts.key.shift'),
-            '⌥': mac ?  t('shortcuts.key.option') : t('shortcuts.key.alt'),
-            '⌫': mac ?  t('shortcuts.key.delete') : t('shortcuts.key.backspace'),
-            '⌦': mac ?  t('shortcuts.key.del')    : t('shortcuts.key.del'),
+            '⌘': mac ? '⌘ '  : t('shortcuts.key.ctrl'),
+            '⇧': mac ? '⇧ '  : t('shortcuts.key.shift'),
+            '⌥': mac ? '⌥ '  : t('shortcuts.key.alt'),
+            '⌫': mac ? '⌫ '  : t('shortcuts.key.backspace'),
+            '⌦': mac ? '⌦ '  : t('shortcuts.key.del'),
         };
 
     for (var i = 0; i < code.length; i++) {
